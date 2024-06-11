@@ -7,7 +7,16 @@ input_file = file_input+'.csv'
 df = pd.read_csv(input_file)
 
 # Select the desired columns
-selected_columns = ['column1', 'column2', 'column3', 'column4']
+selected_columns = []
+while True:
+    column = input("Enter the name of a column (or 'stop' to finish): ")
+    if column == 'stop':
+        break
+    if column not in df.columns:
+        print("Invalid column name. Please try again.")
+        continue
+    selected_columns.append(column)
+
 new_df = df[selected_columns]
 
 # Save the selected columns to a new CSV file
