@@ -16,4 +16,20 @@ The correlation matrix is used to find columns that relate to each other or _cor
 
 ## Strongest correlations
 
-My code
+My code selects the 12 strongest correlations from the 58x163 cleaned dataset.
+![strongest correlations](images/strongest_correlations.png)
+
+We'll come back to this in a second, but on a side note, I wanted to talk about the complexity of this and the math behind it.
+
+## Calculating the strongest correlations
+
+Let's break this down:
+
+- Calculating the pairwise correlation for a matrix of size `m x n` (m is the number of rows, n is the number of columns) generally has a time complexity of `O(n^2 * m)` because each pair of columns requires O(m) operations to compute. There are Nc2 pairs which is `n^2 / 2`. **For this dataset**, this is `58 * 58 * 0.5 * 163` or about 274, 000.
+
+- Getting the absolute value of the matrix is O(n^2) as it requires going through each element of the `n x n` correlation matrix but this is a minor operation compared to calculating the correlation.
+
+- Creating the mask also takes O(n^2) as we are iterating over the `n x n` matrix again to set the triangle.
+
+- Unstacking the matrix which moves it from a 2D array to a 1D one with labels takes `O(n^2 log(n^2))` which is equal to `O(2 n^2 log n)` since there are n^2 elements in the correlation matrix and sorting them takes `O(n^2 log n)`.
+- Selecting the top 12 correlations is just O(1) because you just pick the top 12 elements form the sorted elements.
