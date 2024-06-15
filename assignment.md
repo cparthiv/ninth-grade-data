@@ -36,5 +36,5 @@ Let's break this down:
 
 - Creating the mask also takes O(n^2) as we are iterating over the `n x n` matrix again to set the triangle.
 
-- Unstacking the matrix which moves it from a 2D array to a 1D one with labels takes $O(n^2 log(n^2)) which is equal to `O(2 n^2 log n)` since there are n^2 elements in the correlation matrix and sorting them takes `O(n^2 log n)`.
+- Unstacking the matrix which moves it from a 2D array to a 1D one with labels takes `O(n^2 log(n^2))` which is equal to `O(2 n^2 log n)` since there are n^2 elements in the correlation matrix and sorting them takes `O(n^2 log n)`.
 - Selecting the top 12 correlations is just O(1) because you just pick the top 12 elements form the sorted elements.
