@@ -13,7 +13,7 @@ Open up Microsoft Excel and save the 9th grade dataset as a CSV file and put it 
 After this, run `utils/filter_unique.py` and set the file name as `multichoice.csv`. Then, run `clean_data.py` which doesn't take arguments and runs in place if `multichoice.csv` exists, then saves it to `cleaned_multichoice.csv`.
 
 `cleaned_multichoice.csv` should now look like this:
-![Cleaned multichoice data](multichoice_preview.png)
+![Cleaned multichoice data](images/multichoice_preview.png)
 
 You are now ready to run the code in analysis.ipynb
 
