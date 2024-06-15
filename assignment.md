@@ -1,5 +1,7 @@
 # Visualizations and explanations
 
+This is also available on my website in a [blog post](https://www.parthiv.dev/blog/ninthgrade-data-analysis)
+
 ## Links to sections
 
 - [Visualizations and explanations](#visualizations-and-explanations)
@@ -24,7 +26,7 @@ The correlation matrix is used to find columns that relate to each other or _cor
 My code selects the 12 strongest correlations from the 58x163 cleaned dataset.
 ![strongest correlations](images/strongest_correlations.png)
 
-We'll come back to this in a second, but on a side note, I wanted to talk about the complexity of this and the math behind it.
+On a side note, I wanted to talk about the complexity of these operations and the math behind them.
 
 ## Calculating the strongest correlations
 
