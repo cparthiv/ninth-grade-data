@@ -15,7 +15,7 @@ After this, run `utils/filter_unique.py` and set the file name as `multichoice.c
 `cleaned_multichoice.csv` should now look like this:
 ![Cleaned multichoice data](images/multichoice_preview.png)
 
-You are now ready to run the code in analysis.ipynb
+You are now ready to run the code in [analysis.ipynb](./analysis.ipynb)
 
 ## Various column name changes
 
