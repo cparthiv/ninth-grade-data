@@ -2,6 +2,11 @@
 
 Run all scripts from folder root (location of this page)
 
+## For grading
+
+This section is for my AP CSP teacher.
+Put the data
+
 ## Various column name changes
 
 Refer to the following tables for column name abbreviation/shortening.
