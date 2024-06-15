@@ -2,9 +2,8 @@
 
 Run all scripts from folder root (location of this page)
 
-## For grading
+## For reading
 
-**This section is for my AP CSP teacher.**
 Please look towards [assignment.md](https://github.com/cparthiv/ninth-grade-data/blob/main/README.md) which contains a bunch of visualizations and explanations.
 
 ## Usage
