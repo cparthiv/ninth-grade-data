@@ -9,6 +9,7 @@ This is also available on my website in a [blog post](https://www.parthiv.dev/bl
   - [Code source](#code-source)
   - [Correlation chart](#correlation-chart)
   - [Strongest correlations](#strongest-correlations)
+  - [Interesting correlations](#interesting-correlations)
   - [Calculating the strongest correlations](#calculating-the-strongest-correlations)
 
 ## Code source
@@ -27,6 +28,17 @@ My code selects the 12 strongest correlations from the 58x163 cleaned dataset.
 ![strongest correlations](images/strongest_correlations.png)
 
 On a side note, I wanted to talk about the complexity of these operations and the math behind them.
+
+## Interesting correlations
+
+Seeing as the highest correlation has a R-score (statistics term for correlation strength) of 0.5, most of these correlations are pretty weak. However, they do denote a relationship.
+
+Here's some of the stronger correlations that I found interesting or made sense to me. I also included my thoughts on why this is the case.
+
+- HTML and Javascript rank first and have the strongest correlation. The question asks people to select how much expertise they have with the language. I believe the reason for this is that HTML and JS are usually taught together to web developers and make up the bulk of the World Wide Web (aside from simple, static sites).
+- "How do you get to school now?" and Python proficiency. This one is a difficult one. I'm not sure why it has a correlation of about 0.46 but maybe it's because kids who know more Python tend to have parents that work harder and drive them to school or they live farther away so they take the bus?
+- GP (the graphic production class) and history rank fourth on this list. History is one of the humanities and so is art, so maybe this is because GP is similar to art and people are interested in both?
+- "Do you think that you are smarter than average?" and C++ have a decently strong correlation. C++ developers are supremacists.
 
 ## Calculating the strongest correlations
 
