@@ -2,9 +2,8 @@ import pandas as pd
 
 # Load the CSV file into a DataFrame
 file_input = input(
-    "Enter the name of the input file without the file ending: \n")
-input_file = file_input+'.csv'
-df = pd.read_csv(input_file)
+    "Enter the name of the input file with the file ending: \n")
+df = pd.read_csv(file_input)
 
 # Select the desired columns
 selected_columns = []
