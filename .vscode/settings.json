@@ -4,7 +4,9 @@
     "colorbar",
     "coolwarm",
     "multichoice",
+    "xlabel",
     "xticks",
+    "ylabel",
     "yticks"
   ],
   "cSpell.ignoreWords": ["imshow"]
