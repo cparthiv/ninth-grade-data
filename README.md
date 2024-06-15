@@ -16,11 +16,3 @@ After this, run `utils/filter_unique.py` and set the file name as `multichoice.c
 ![Cleaned multichoice data](images/multichoice_preview.png)
 
 You are now ready to run the code in [analysis.ipynb](./analysis.ipynb)
-
-## Various column name changes
-
-Refer to the following tables for column name abbreviation/shortening.
-
-| Original question                                     | Modified name        |
-| ----------------------------------------------------- | -------------------- |
-| Do you think you are smarter than the average person? | smarter_than_average |
