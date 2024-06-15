@@ -11,6 +11,7 @@ This is also available on my website in a [blog post](https://www.parthiv.dev/bl
   - [Strongest correlations](#strongest-correlations)
   - [Interesting correlations](#interesting-correlations)
   - [Calculating the strongest correlations](#calculating-the-strongest-correlations)
+  - [Analyzing the sport-related data](#analyzing-the-sport-related-data)
 
 ## Code source
 
@@ -52,3 +53,20 @@ Let's break this down:
 
 - Unstacking the matrix which moves it from a 2D array to a 1D one with labels takes `O(n^2 log(n^2))` which is equal to `O(2 n^2 log n)` since there are n^2 elements in the correlation matrix and sorting them takes `O(n^2 log n)`.
 - Selecting the top 12 correlations is just O(1) because you just pick the top 12 elements form the sorted elements.
+
+## Analyzing the sport-related data
+
+I'll be honest, I didn't feel like cleaning all 163 responses. It would have been easy to visualize if the questions were multiple choice or multi-select. Instead, I took the following steps for my visualizations:
+
+- Pre-process the data
+
+  - Select the sport questions and create a new csv file for them and initialize a DataFrame.
+  - Clean the data: convert everything to lowercase, remove punctuation, and filter out stopwords like "year" or "and".
+
+- Count word frequencies
+- Generate and plot the wordcloud
+- Generate and plot the network graph
+
+Here are the visualizations:
+![sports wordcloud](images/sports_wordcloud.png)
+![sports network](images/raw_network.png)
